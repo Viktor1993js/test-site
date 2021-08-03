@@ -1,0 +1,61 @@
+body {
+    font-family: 'OpenSans';
+    font-weight: 400;
+    line-height: 1.5;
+    color: $color-white;
+}
+
+.text-secondary {
+    font-family: 'OpenSans';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.118rem;
+    line-height: 1.864;
+    text-align: center;
+}
+
+.text-small {
+    position: relative;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    letter-spacing: .6rem;
+    text-align: center;
+    top: .8rem;
+}
+
+.line {
+    position: absolute;
+    background-color: $color-yellow;
+    width: 5.6rem;
+    height: .4rem;
+    border: none;
+    border-radius: 2px;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+}
+
+.heading-primary {
+    font-family: "Banny";
+    text-align: center;
+    color: $color-white;
+    text-transform: uppercase;
+    font-size: 8.946rem;
+}
+
+.heading-secondary {
+    position: relative;
+    font-family: "Banny";
+    font-style: bold;
+    text-align: center;
+    color: $color-black;
+    text-transform: uppercase;
+    font-size: 3.355rem;
+    letter-spacing: .25rem;
+
+    &--white{
+        color: $color-white;
+    }
+}
+

@@ -1,0 +1,26 @@
+.btn {
+    width: 18.7rem;
+    height: 5.6rem;
+    border-radius: .5rem;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: rgba(112, 112, 112, 0.0);
+    color: $color-white;
+    transition: all .4s;
+
+    &:not(:last-child) {
+        margin-right: 3.5rem;
+    }
+
+    &__text {
+        // font-family: 'OpenSans';
+        letter-spacing: .07rem;
+        font-weight: 700;
+    }
+
+    &:hover {
+        background-color: $color-yellow;
+        border: 1px solid $color-yellow;
+        cursor: pointer;
+    }
+}
+

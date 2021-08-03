@@ -1,0 +1,15 @@
+{
+  "name": "test-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "node-sass sass/style.scss css/style.css -w"
+  },
+  "author": "Viktor",
+  "license": "ISC",
+  "dependencies": {
+    "compile-sass": "^1.1.3"
+  }
+}
