@@ -1,12 +1,12 @@
 @font-face {
   font-family: "OpenSans";
-  src: url("/css/fonts/OpenSans-Regular.ttf") format("truetype");
+  src: url("../css/fonts/OpenSans-Regular.ttf") format("truetype");
   font-style: normal;
   font-weight: normal; }
 
 @font-face {
   font-family: "Banny";
-  src: url("/css/fonts/Banny-Round.otf") format("truetype");
+  src: url("../css/fonts/Banny-Round.otf") format("truetype");
   font-style: normal;
   font-weight: normal; }
 
@@ -154,19 +154,11 @@ body {
     border: 1px solid #E8C300;
     cursor: pointer; }
 
-.choco-container {
-  overflow: hidden;
-  width: 300vw; }
-  .choco-container__box {
-    overflow: hidden;
-    width: 100vw;
-    float: left; }
-
 .choco {
   position: relative;
   height: 62.9rem;
-  width: 100vw;
-  background-image: url("/img/specialty.png");
+  width: 100%;
+  background-image: url("../img/specialty.png");
   background-size: cover;
   background-position: center;
   margin-top: 4rem;
@@ -175,7 +167,7 @@ body {
   float: left; }
   .choco__img {
     position: relative;
-    background-image: url("/img/Rectangle.png");
+    background-image: url("../img/Rectangle.png");
     width: 53.7rem;
     height: 53.7rem;
     background-size: cover;
@@ -229,10 +221,35 @@ body {
     .circle-box__circle:not(:last-child) {
       margin-right: 17px; }
 
+.slider {
+  position: relative; }
+
+.slider .slick-arrow {
+  position: absolute;
+  top: 10%;
+  z-index: 10;
+  font-size: 0;
+  height: 90%;
+  opacity: 0; }
+
+.slider .slick-arrow.slick-prev {
+  left: 0;
+  width: 20%; }
+
+.slider .slick-arrow.slick-next {
+  right: 0;
+  width: 20%; }
+
+.slick-list {
+  overflow: hidden; }
+
+.slick-track {
+  display: flex; }
+
 .header {
   width: 100%;
   height: 74.5rem;
-  background-image: url("/img/header-bg.png");
+  background-image: url("../img/header-bg.png");
   background-position: center;
   background-size: cover;
   position: relative; }
@@ -324,21 +341,21 @@ body {
       transform: translate(-50%, -50%);
       top: 105%; }
   .header__icon--fb {
-    background-image: url("/img/fb.svg");
+    background-image: url("../img/fb.svg");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     width: 22px;
     height: 18px; }
   .header__icon--tw {
-    background-image: url("/img/tw.svg");
+    background-image: url("../img/tw.svg");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     width: 22px;
     height: 18px; }
   .header__icon--inst {
-    background-image: url("/img/inst.svg");
+    background-image: url("../img/inst.svg");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -367,7 +384,7 @@ body {
     height: 35px;
     border-radius: 50%; }
   .header__anchor {
-    background-image: url("/img/angle-down.svg");
+    background-image: url("../img/angle-down.svg");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -431,7 +448,7 @@ body {
     border-radius: 4.66px;
     padding: 2rem;
     appearance: none;
-    background-image: url("/img/untitled-grey.svg");
+    background-image: url("../img/untitled-grey.svg");
     background-size: 20px;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -441,7 +458,7 @@ body {
     height: 53.7rem; }
   .section-forms__img {
     position: relative;
-    background-image: url("/img/about-img.png");
+    background-image: url("../img/about-img.png");
     width: 53.7rem;
     height: 53.7rem;
     background-size: cover; }

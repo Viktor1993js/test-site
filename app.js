@@ -56,18 +56,12 @@ let choco = function () {
   
 }
 
-choco();
 img();
+choco();
 
-setInterval(() => {
-start();
-}, 2000)
+$(document).ready(function(){
+  $('.slider').slick({
 
-function start () {
-  let circles = document.querySelectorAll('.circle-box__circle');
-  let choco = document.querySelector('.choco-container__box');
-    choco.style.transform = "translateX(-100vw)";
-}
-
-
+  });
+});
     

@@ -61,7 +61,7 @@
         border-radius: 4.66px;
         padding: 2rem;
         appearance: none;
-        background-image: url("/img/untitled-grey.svg");
+        background-image: url("../img/untitled-grey.svg");
         background-size: 20px;
         background-repeat: no-repeat;
         overflow: hidden;
@@ -76,7 +76,7 @@
 
     &__img {
         position: relative;
-        background-image: url('/img/about-img.png');
+        background-image: url('../img/about-img.png');
         width: 53.7rem;
         height: 53.7rem;
         background-size: cover;
