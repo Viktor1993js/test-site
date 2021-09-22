@@ -24,22 +24,23 @@ let img = function () {
   
   for (let i = 0; i < img.length; i++) {
     img[i].addEventListener("mouseover", () => {
-      for (let i = 0; i < img.length; i++) {
-        square[i].style.opacity = 1;
-      }
+        for (let i = 0; i < img.length; i++) {
+          square[i].style.opacity = 1;
+        }
+    })
       img[i].addEventListener("mouseout", () => {
         for (let i = 0; i < img.length; i++) {
           square[i].style.opacity = 0;
         }
-      })
     })
-    
   }
 }
 
 let choco = function () {
   let choco = document.querySelectorAll('#choco');
+  let img = document.querySelectorAll('#img');
   let square = document.querySelectorAll('#choco-square');
+  let squareRight = document.querySelectorAll('#square');
   
   for (let i = 0; i < choco.length; i++) {
     choco[i].addEventListener("mouseover", () => {
@@ -54,14 +55,41 @@ let choco = function () {
     })
   }
   
+  for (let i = 0; i < img.length; i++) {
+    img[i].addEventListener("mouseover", () => {
+      for (let i = 0; i < img.length; i++) {
+        squareRight[i].style.opacity = 1;
+      }
+      img[i].addEventListener("mouseout", () => {
+        for (let i = 0; i < img.length; i++) {
+          squareRight[i].style.opacity = 0;
+        }
+      })
+    })
+  }
+}
+
+let chocoRight = function () {
+  let img = document.querySelectorAll('#img');
+  let squareRight = document.querySelectorAll('#square');
+  
+  for (let i = 0; i < img.length; i++) {
+    img[i].addEventListener("mouseover", () => {
+      for (let i = 0; i < img.length; i++) {
+        squareRight[i].style.opacity = 1;
+      }
+      img[i].addEventListener("mouseout", () => {
+        for (let i = 0; i < img.length; i++) {
+          squareRight[i].style.opacity = 0;
+        }
+      })
+    })
+  }
 }
 
 img();
 choco();
+chocoRight();
 
-$(document).ready(function(){
-  $('.slider').slick({
 
-  });
-});
     
