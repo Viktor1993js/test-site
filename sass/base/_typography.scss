@@ -42,8 +42,15 @@ body {
     color: $color-white;
     text-transform: uppercase;
     font-size: 8.946rem;
-    @include respond (phone) {
+    @include respond (tab-land) {
+        font-size: 5rem;
+    }
+    
+    @include respond (tab-port) {
         font-size: 4rem;
+    }
+    @include respond (phone) {
+        font-size: 3rem;
     }
 }
 
