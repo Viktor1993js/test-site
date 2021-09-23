@@ -790,13 +790,18 @@ body {
   margin-right: 14rem; }
   @media only screen and (max-width: 37.5em) {
     .section-forms {
-      display: block;
+      display: flex;
+      justify-content: center;
       margin-right: 0;
       margin-left: 0; } }
   .section-forms__box-form {
     position: relative;
     margin-top: 10rem;
     margin-right: 1.6rem; }
+    @media only screen and (max-width: 37.5em) {
+      .section-forms__box-form {
+        margin-right: 0;
+        margin-top: 5rem; } }
   .section-forms__form {
     max-width: 53rem;
     width: 100%;
@@ -804,6 +809,10 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around; }
+    @media only screen and (max-width: 37.5em) {
+      .section-forms__form {
+        flex-direction: column;
+        align-items: center; } }
   .section-forms__btn {
     font-size: 1.3rem;
     color: rgba(51, 51, 51, 0.5);
