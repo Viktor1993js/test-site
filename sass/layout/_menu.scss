@@ -1,9 +1,7 @@
 .menu {
     margin: 0rem 5rem 4.5rem 7.8rem;
 
-    &__header {
-
-    }
+    &__header {}
 
     &__text {
         position: relative;
@@ -48,7 +46,7 @@
         }
 
         &:visited,
-         :link {
+        :link {
             text-align: center;
             width: 11.1rem;
             height: 4.65rem;
@@ -69,10 +67,27 @@
         padding-top: 4.5rem;
         flex-wrap: wrap;
 
+        @include respond (tab-desktop) {
+            justify-content: center;
+        }
+
+        // @include respond (tab-land) {
+        //     justify-content: center;
+        // }
+
+        // @include respond (tab-port) {
+        //     justify-content: center;
+        // }
+
+        // @include respond (phone) {
+        //     justify-content: center;
+        // }
     }
 
     &__price-box {
-
+        @include respond (tab-desktop) {
+            margin-right: 2rem;
+        }
     }
 
     &__item {
@@ -86,8 +101,13 @@
         line-height: 1.2rem;
         letter-spacing: .16rem;
         font-weight: bold;
+
+        @include respond (phone) {
+            line-height: 2rem;
+            letter-spacing: .01rem;
+        }
     }
-    
+
     &__text-two {
         color: #999999;
         font-size: 1.18rem;

@@ -8,7 +8,7 @@
 
     &__box {
         display: flex;
-        flex-wrap: wrap;
+        // flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
         padding: 0 19rem 0 19rem;
@@ -31,8 +31,19 @@
     &__img {
         width: 100%;
         height: 100%;
+        z-index: 1000;
         object-fit: cover;
         border-radius: 4.66px;
+
+        @include respond (tab-desktop) {
+            width: 100%;
+            height: 100%;
+        }
+
+        @include respond (tab-land) {
+            width: 100%;
+            height: 100%;
+        }
     }
 
     &__item-left {
@@ -58,6 +69,18 @@
         font-family: "Banny";
         font-size: 2.236rem;
         text-transform: uppercase;
+
+        // @include respond (tab-port) {
+        //     font-size: 1rem;
+        // }
+        
+        // @include respond (tab-port) {
+        //     font-size: 1.5rem;
+        // }
+
+        // @include respond (phone) {
+        //     font-size: .5rem;
+        // }
 
         &--left {
             position: absolute;
@@ -129,4 +152,3 @@
         transition: all .5s;
     }
 }
-
