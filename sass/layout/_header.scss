@@ -189,217 +189,226 @@
         position: absolute;
         @include absCenter;
     }
-}
-
-@include respond (tab-desktop) {
-    .header {
-        font-size: 50%;
-        &__menu {
-            padding-top: 1rem;
-            display: flex;
-            flex-wrap: nowrap;
-            justify-content: space-around;
-        }
-
-        &__item-box {
-            
-        }
-
-        &__logo-box {
-            position: relative;
-        }
-
-        &__logo {
-            width: 8.978rem;
-            height: 8.978rem;
-        }
-
-        &__timer-box {
-            left: -3px;
-            top: 17.2rem;
-        }
-    }
-}
-
-@include respond (tab-land) {
-    .header {
-        font-size: 50%;
-        &__menu {
-            padding-top: 1rem;
-            display: flex;
-            flex-wrap: nowrap;
-            justify-content: space-around;
-        }
-
-        &__item-box {
-            
-        }
-
-        &__logo-box {
-            position: relative;
-            // left: 1rem;
-            // top: 1rem;
-        }
-
-        &__logo {
-            width: 8.978rem;
-            height: 8.978rem;
-        }
-
-        &__timer-box {
-            left: -3px;
-            top: 17.2rem;
-        }
-    }
-}
-
-@include respond (tab-port) {
-    .header {
-
-        &__menu {
-            padding-top: 1rem;
-            display: flex;
-            flex-wrap: nowrap;
-            justify-content: space-around;
-        }
-
-        &__item-box {
-            width: 9.394rem;
-            height: 6.319rem;
-        }
-
-        &__logo-box {
-            position: relative;
-            // left: 1rem;
-            // top: 1rem;
-        }
-
-        &__logo {
-            width: 7.978rem;
-            height: 7.978rem;
-        }
-
-        &__timer-box {
-            left: -3px;
-            top: 17.2rem;
-        }
-    }
-}
-
-@include respond (phone) {
-    .header {
-        width: 100%;
-        height: 74.5rem;
-        background-image: url('../img/header-bg.png');
-        background-position: center;
-        background-size: cover;
-        position: relative;
-
-
-        &__menu {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
-
-        &__left {
-            display: flex;
-        }
-
-        &__item-box {
-            padding: 0;
-            margin: 0;
-        }
-
-        &__item {
-            text-align: center;
-            font-weight: bold;
-            font-size: 1.18rem;
-            color: $color-white;
-            text-decoration: none;
-            flex-wrap: wrap;
-            line-height: 1.7rem;
-            letter-spacing: .11rem;
-            text-transform: uppercase;
-            transition: all .4s;
-
-            &:hover {
-                color: $color-yellow;
+    @include respond (tab-desktop) {
+        .header {
+            font-size: 50%;
+            &__menu {
+                padding-top: 1rem;
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: space-around;
+            }
+    
+            &__item-box {
+                
+            }
+    
+            &__logo-box {
+                position: relative;
+            }
+    
+            &__logo {
+                width: 8.978rem;
+                height: 8.978rem;
+            }
+    
+            &__timer-box {
+                left: -3px;
+                top: 17.2rem;
             }
         }
-
-        &__logo-box {
-            position: absolute;
-            left: 1rem;
-            top: 1rem;
+    }
+    
+    @include respond (tab-land) {
+        .header {
+            font-size: 50%;
+            &__menu {
+                padding-top: 1rem;
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: space-around;
+            }
+    
+            &__item-box {
+                
+            }
+    
+            &__logo-box {
+                position: relative;
+                // left: 1rem;
+                // top: 1rem;
+            }
+    
+            &__logo {
+                width: 8.978rem;
+                height: 8.978rem;
+            }
+    
+            &__timer-box {
+                left: -3px;
+                top: 17.2rem;
+            }
         }
-
-        &__logo {
-            width: 4.978rem;
-            height: 4.978rem;
+    }
+    
+    @include respond (tab-port) {
+        .header {
+    
+            &__menu {
+                padding-top: 1rem;
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: space-around;
+            }
+    
+            &__item-box {
+                width: 9.394rem;
+                height: 6.319rem;
+            }
+    
+            &__logo-box {
+                position: relative;
+                // left: 1rem;
+                // top: 1rem;
+            }
+    
+            &__logo {
+                width: 7.978rem;
+                height: 7.978rem;
+            }
+    
+            &__timer-box {
+                left: -3px;
+                top: 17.2rem;
+            }
+    
+            &__work-time {
+                position: absolute;
+                top: 41rem;
+                left: -7.5rem;
+            }
+    
+            &__networks-box {
+                right: 3.5rem;
+            }
         }
-
-        &__right {
-            display: flex;
-        }
-
-        &__timer-box {
-            position: absolute;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 24.0rem;
-            height: 6.4rem;
-            background: rgba(196, 196, 196, 0.3);
-            left: -3px;
-            top: 17.2rem;
-        }
-
-        &__timer-text {
-            font-weight: bold;
-            font-size: 4.046rem;
-            color: #FFFEFE;
-            line-height: 0px;
-        }
-
-        &__time {
-            font-weight: bold;
-            font-size: 4.046rem;
-            color: #FFFEFE;
-            line-height: 0px;
-        }
-
-        &__work-time {
-            position: absolute;
-            top: 41rem;
-            left: -11rem;
-        }
-
-        &__work {
-            text-align: center;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 1.1rem;
-            line-height: 1rem;
-            letter-spacing: .01rem;
-            text-align: center;
-            color: #FFFFFF;
-            transform: rotate(-90deg);
-        }
-
-        &__networks-box {
-            position: absolute;
-            right: .5rem;
-            top: 25.5rem;
-        }
-
-        &__circle {
-            margin-bottom: 1.5rem;
-            width: 4.5rem;
-            height: 4.5rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+    }
+    
+    @include respond (phone) {
+        .header {
+            width: 100%;
+            height: 74.5rem;
+            background-image: url('../img/header-bg.png');
+            background-position: center;
+            background-size: cover;
+            position: relative;
+    
+    
+            &__menu {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+    
+            &__left {
+                display: flex;
+            }
+    
+            &__item-box {
+                padding: 0;
+                margin: 0;
+            }
+    
+            &__item {
+                text-align: center;
+                font-weight: bold;
+                font-size: 1.18rem;
+                color: $color-white;
+                text-decoration: none;
+                flex-wrap: wrap;
+                line-height: 1.7rem;
+                letter-spacing: .11rem;
+                text-transform: uppercase;
+                transition: all .4s;
+    
+                &:hover {
+                    color: $color-yellow;
+                }
+            }
+    
+            &__logo-box {
+                position: absolute;
+                left: 1rem;
+                top: 1rem;
+            }
+    
+            &__logo {
+                width: 4.978rem;
+                height: 4.978rem;
+            }
+    
+            &__right {
+                display: flex;
+            }
+    
+            &__timer-box {
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 24.0rem;
+                height: 6.4rem;
+                background: rgba(196, 196, 196, 0.3);
+                left: -3px;
+                top: 17.2rem;
+            }
+    
+            &__timer-text {
+                font-weight: bold;
+                font-size: 4.046rem;
+                color: #FFFEFE;
+                line-height: 0px;
+            }
+    
+            &__time {
+                font-weight: bold;
+                font-size: 4.046rem;
+                color: #FFFEFE;
+                line-height: 0px;
+            }
+    
+            &__work-time {
+                position: absolute;
+                top: 41rem;
+                left: -11rem;
+            }
+    
+            &__work {
+                text-align: center;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 1.1rem;
+                line-height: 1rem;
+                letter-spacing: .01rem;
+                text-align: center;
+                color: #FFFFFF;
+                transform: rotate(-90deg);
+            }
+    
+            &__networks-box {
+                position: absolute;
+                right: .5rem;
+                top: 25.5rem;
+            }
+    
+            &__circle {
+                margin-bottom: 1.5rem;
+                width: 4.5rem;
+                height: 4.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
         }
     }
 }

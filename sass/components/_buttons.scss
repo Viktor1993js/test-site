@@ -7,6 +7,11 @@
     color: $color-white;
     transition: all .4s;
 
+    @include respond (phone) {
+        width: 13.7rem;
+        height: 4.6rem;
+    }
+
     &:not(:last-child) {
         margin-right: 3.5rem;
     }
@@ -23,4 +28,3 @@
         cursor: pointer;
     }
 }
-
