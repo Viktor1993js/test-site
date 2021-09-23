@@ -139,7 +139,7 @@
         max-width: 23rem;
         max-height: 23rem;
         background-color: rgba(0, 0, 0, 0);
-        z-index: 100;
+        z-index: 10000;
         border: 1.8rem solid $color-yellow;
         border-radius: 4.66px;
         top: 50%;
@@ -147,6 +147,10 @@
         transform: translate(-145%, -50%);
         opacity: 0;
         transition: all .5s;
+
+        @include respond (tab-desktop) {
+            display: none;
+        }
     }
 
     &__square-right {
@@ -162,5 +166,9 @@
         transform: translate(45%, -50%);
         opacity: 0;
         transition: all .5s;
+
+        @include respond (tab-desktop) {
+            display: none;
+        }
     }
 }
