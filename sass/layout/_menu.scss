@@ -70,18 +70,6 @@
         @include respond (tab-desktop) {
             justify-content: center;
         }
-
-        // @include respond (tab-land) {
-        //     justify-content: center;
-        // }
-
-        // @include respond (tab-port) {
-        //     justify-content: center;
-        // }
-
-        // @include respond (phone) {
-        //     justify-content: center;
-        // }
     }
 
     &__price-box {
@@ -106,6 +94,13 @@
             line-height: 2rem;
             letter-spacing: .01rem;
             font-size: 1.4rem;
+        }
+        @include respond (phoneS) {
+            font-size: 1rem;
+        }
+
+        @include respond (phoneM) {
+            font-size: 1.2rem;
         }
     }
 

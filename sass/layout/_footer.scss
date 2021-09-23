@@ -5,6 +5,9 @@
     background-size: cover;
     background-position: center;
     overflow: hidden;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 
     &__box {
         display: flex;
@@ -40,9 +43,12 @@
     &__img {
         width: 100%;
         height: 100%;
-        // z-index: 1000;
+        z-index: 1000;
         object-fit: cover;
         border-radius: 4.66px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
 
     }
 
@@ -53,6 +59,7 @@
         height: 100%;
         right: 0;
         border-radius: 0 4.66px 4.66px 0;
+        z-index: 1200;
     }
 
     &__item-right {
@@ -62,6 +69,7 @@
         height: 100%;
         left: 0;
         border-radius: 4.66px 0 0 4.66px;
+        z-index: 1200;
     }
 
     &__item-text {
@@ -79,6 +87,9 @@
             left: -1.5rem;
             top: 6rem;
             transform: rotate(90deg);
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
 
             @include respond (phone) {}
         }
@@ -89,6 +100,9 @@
             writing-mode: vertical-lr;
             left: 3rem;
             bottom: 2rem;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
 
             @include respond (phone) {
                 left: 1.5rem;
