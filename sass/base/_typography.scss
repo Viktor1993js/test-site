@@ -71,5 +71,9 @@ body {
     &--white{
         color: $color-white;
     }
+
+    @include respond (phone) {
+        font-size: 2rem;
+    }
 }
 
