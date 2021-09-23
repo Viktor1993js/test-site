@@ -83,6 +83,9 @@ body {
   letter-spacing: .6rem;
   text-align: center;
   top: .8rem; }
+  @media only screen and (max-width: 37.5em) {
+    .text-small {
+      margin-bottom: 1rem; } }
 
 .line {
   position: relative;
@@ -821,7 +824,10 @@ body {
       background-color: #E8C300;
       border: none;
       border-radius: 4.66px;
-      color: #FFFFFF; }
+      color: #FFFFFF;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none; }
       @media only screen and (max-width: 37.5em) {
         .section-forms__btn--enother {
           max-width: 25.7rem;

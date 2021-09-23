@@ -22,6 +22,10 @@ body {
     letter-spacing: .6rem;
     text-align: center;
     top: .8rem;
+
+    @include respond (phone) {
+        margin-bottom: 1rem;
+    }
 }
 
 .line {
